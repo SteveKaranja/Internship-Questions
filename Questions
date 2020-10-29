@@ -1,1 +1,20 @@
+QUESTION 1
+Dimention Reduction
+This is the process of reducing the number of input variables(dimensions) of a dataset in order to make ML algorithms more efficient.
+The more the number of dimensions, the harder it is to perform machine learning. This is called the curse of dimensionality.
 
+QUESTION 2
+Identifying and deleting duplicates
+
+import pandas as pd
+
+#load and display data
+data = pd.read_csv('file.csv')
+data
+
+#find and display duplicates except first occurence
+duplicates = data[data.duplicated()]
+duplicates
+
+# delete duplicates
+data.drop_duplicates()
